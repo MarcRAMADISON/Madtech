@@ -1,0 +1,139 @@
+.container{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   place-self: center;
+   width:90vw;
+   max-width: 1920px;
+   place-self: center;
+   height: fit-content;
+   margin:150px 0px;
+   padding: 0;
+}
+.title{
+    color:#00214d;
+    font-size: 2.5rem;
+
+}
+.subTitle{
+    color:#00214d;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:100%;
+    background-color: #f8f5f1;
+    height:auto;
+    margin-top: 100px;
+    position:relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#ffde59 0%, #ff914d 100%);
+    opacity: 0.7;
+    z-index: -1;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    max-width: 450px;
+    margin: 100px auto auto auto;
+    padding: 20px;
+    place-self:center;
+    position: relative;
+    z-index: 1;
+    height:140px;
+    
+}
+.bodyCard{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    max-width: 450px;
+    height:auto;
+    min-height: 520px;
+    background-color: #fff;
+    margin:auto auto 50px auto;
+    place-self: center;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 30px 30px 30px;
+}
+
+.label{
+    color:#00214d;
+    font-size: 1.1rem;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.offre{
+    color:#fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.description{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.price{
+    color:#00214d;
+    font-size: 2rem;
+    place-self: center;
+    margin:auto
+}
+.info{
+    color:#00214d;
+    font-size: 0.8rem;
+    margin:30px 0px;
+    font-weight: 600;
+    text-align: center;
+}
+.button{
+    padding: 10px 15px;
+    place-self: center;
+    color:#fff;
+    font-weight: 600;
+    background-color: #38b6ff;
+    border-radius: 5px;
+}
+
+@media (max-width:920px){
+    .container{
+        margin:100px 0px;
+     }
+     .title{
+        font-size: 1.9rem;
+    }
+    .subTitle{
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    .cardContainer{
+        grid-template-columns: 100%;
+    }
+    .header{
+        margin: 50px auto auto auto;
+    }
+    .bodyCard{
+        padding: 10px 20px 30px 20px;
+    }
+    .cardContainer{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,149 @@
+.container {
+  background-image: url('/assets/welcome_bg.jpg');
+  width: 100vw;
+  min-height: 900px;
+  height: 90vh;
+  max-height: 1080px;
+  max-height: 1080px;
+  max-width: 1920px;
+   place-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.containerVideo{
+  background-image: url('/assets/welcome_bg.jpg');
+  width: 100vw;
+  max-height: 900px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  width: 100%;
+  height: 100%;
+  max-height: 1080px;
+}
+
+.title {
+  font-size: 3.1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50px;
+  z-index: 9;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 1rem;
+  z-index: 9;
+}
+
+.sloganContainer {
+  display: flex;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.contactButton {
+  margin-right: 20px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  background: #8C52FF;
+  background: linear-gradient(90deg,#ffde59 0%, #ff914d 100%);
+  color:#fff;
+}
+
+.play{
+  margin-right: 20px;
+  animation: 1.5s ease-in infinite animationPlay;
+  cursor: pointer;
+}
+
+.imageContainer{
+  width: auto; 
+  height: 80vh;
+  position: relative;
+  z-index:0
+}
+
+@keyframes animationPlay {
+  0% {
+    scale: 0.8;
+  } 50% {
+    scale:1
+  } 100%{
+    scale:0.8
+  }
+}
+
+@media (max-width:1380px){
+  .title {
+    font-size: 3rem;
+  }
+  .subTitle {
+    font-size: 1.1rem;
+  }
+  .container {
+    min-height: 750px;
+    height:fit-content;
+    height: 100vh;
+  }
+  .contactButton {
+    margin-right: 20px 0px;
+  }
+  .block1 {
+    margin-bottom: 3vh;
+  }
+}
+
+@media (max-width:1080px){
+  .container {
+    height:fit-content;
+    grid-template-columns: 100%;
+    padding:150px 0px 50px 0px
+  }
+  .title{
+    font-size: 1.9rem;
+  }
+  .subTitle{
+    font-size: 1rem;
+  }
+  .contactButton {
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background: #8C52FF;
+    background: linear-gradient(90deg,#ffde59 0%, #ff914d 100%);
+    color:#fff;
+    font-size: 1rem;
+  }
+  .block1 {
+    padding: 0px 5vw;
+    margin-left: 0px;
+  }
+  .sloganContainer{
+    flex-wrap: wrap;
+  }
+  .slogan{
+    margin-top: 40px;
+  }
+  .imageContainer{
+    display: none;
+  }
+}

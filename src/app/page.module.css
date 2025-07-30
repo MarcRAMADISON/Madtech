@@ -1,0 +1,7 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;  
+  max-width: 1920px ;
+  place-self: center;
+}
