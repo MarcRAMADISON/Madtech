@@ -9,15 +9,9 @@ import Swal from "sweetalert2";
 
 function Contact() {
   const [values, setValues] = useState({
-    name: "",
-    prenom: "",
-    typeEntreprise: "",
-    nomEntreprise: "",
+    fullName: "",
     email: "",
     telephone: "",
-    pays: "",
-    ville: "",
-    codePostal: "",
     message: "",
   });
 
@@ -61,16 +55,10 @@ function Contact() {
   };
 
   const checkValidation =
-    values.name &&
-    values.prenom &&
+    values.fullName &&
+    values.telephone &&
     values.email &&
-    values.codePostal &&
-    values.message &&
-    values.nomEntreprise &&
-    values.typeEntreprise &&
-    values.ville &&
-    values.pays &&
-    values.telephone;
+    values.message
 
   return (
     <div className={styles.container} id="contact">
@@ -79,44 +67,11 @@ function Contact() {
         <div className={styles.block1}>
           <div className={styles.inputLine}>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Nom :</h3>
+              <h3 className={styles.label}>Nom complet :</h3>
               <input
                 className={styles.inputField}
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Prénom :</h3>
-              <input
-                className={styles.inputField}
-                name="prenom"
-                value={values.prenom}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Type d'entreprise :</h3>
-              <input
-                className={styles.inputField}
-                name="typeEntreprise"
-                value={values.typeEntreprise}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Nom de l'entreprise :</h3>
-              <input
-                className={styles.inputField}
-                name="nomEntreprise"
-                value={values.nomEntreprise}
+                name="fullName"
+                value={values.fullName}
                 onChange={handleChange}
               />
             </div>
@@ -144,41 +99,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className={styles.block2}>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Pays :</h3>
-              <input
-                className={styles.inputField}
-                name="pays"
-                value={values.pays}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Ville :</h3>
-              <input
-                className={styles.inputField}
-                name="ville"
-                value={values.ville}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Code postal :</h3>
-              <input
-                className={styles.inputField}
-                name="codePostal"
-                value={values.codePostal}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-        </div>
+       
         <div className={styles.block1Message} style={{ marginTop: "17px" }}>
           <div className={styles.inputLine}>
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -204,14 +125,14 @@ function Contact() {
         </div>
       </Animation>
       <Animation animation="fadeInLeft" className={styles.contact}>
-        <h2 className={styles.title}>Nous contacter</h2>
+        <h2 className={styles.title}>Me contacter</h2>
         <h3 className={styles.subtitle}>
           Vous avez un projet en tête ? Besoin d’un accompagnement sur-mesure ou
-          d’une estimation claire ? Notre équipe est à votre écoute pour vous
+          d’une estimation claire ? Je suis à votre écoute pour vous
           proposer une solution adaptée à vos besoins.
         </h3>
         <h3 className={styles.subtitle} style={{ fontWeight: "bold" }}>
-          Remplissez le formulaire, on s’occupe du reste.
+          Remplissez le formulaire, je m’occupe du reste.
         </h3>
         <div
           style={{
@@ -231,7 +152,7 @@ function Contact() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h3 className={styles.contactTitle}>E-mail</h3>
             <h3 className={styles.contactSubTitle}>
-              communitymanagerwebillion.com
+              marcramadison006@gmail.com
             </h3>
           </div>
         </div>
@@ -252,7 +173,7 @@ function Contact() {
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h3 className={styles.contactTitle}>Téléphone</h3>
-            <h3 className={styles.contactSubTitle}>+261 32 36 662 02</h3>
+            <h3 className={styles.contactSubTitle}>+261 34 54 653 16</h3>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: "60px" }}>

@@ -21,14 +21,14 @@ export default function Welcome({ isLandingPage=false }) {
           VENTE, nous transformons votre présence digitale en machine à vendre.
         </h2>
         <h2 className={styles.subTitle} style={{ marginTop: "30px" }}>
-          Nous vous accompagnons de A à Z : création de site, stratégie
+          Je vous accompagne de A à Z : création de site, stratégie
           digitale, gestion des réseaux sociaux, génération de trafic et
           conversions.
         </h2>
         <div className={styles.sloganContainer} style={{margin: '40px 0px'}}>
           <div className={styles.contactButton}>Objectif : rentabilité</div>
           <h3 className={styles.slogan}>
-            Innovation , engagement , Performance
+            Innovation , Engagement , Performance
           </h3>
         </div>
         <h2
@@ -66,15 +66,15 @@ export default function Welcome({ isLandingPage=false }) {
           <div key="1" className={styles.container}>
             <Animation className={styles.block1} animation="fadeInRight">
               <h1 className={styles.title}>
-                L’innovation digitale au service de votre succès.
+              Fatigué d’avoir un site web et une visibilité en ligne qui ne rapportent pas ? 
               </h1>
               <h2 className={styles.subTitle}>
                 TON BUSINESS EN LIGNE COMMENCE ICI : DE LA PRESENCE EN LIGNE À
-                LA VENTE, nous transformons votre présence digitale en machine à
+                LA VENTE, je transforme votre présence digitale en machine à
                 vendre.
               </h2>
               <h2 className={styles.subTitle} style={{ marginTop: "40px" }}>
-                Nous vous accompagnons de A à Z : création de site, stratégie
+                Je vous accompagne de A à Z : création de site, stratégie
                 digitale, gestion des réseaux sociaux, génération de trafic et
                 conversions.
               </h2>
@@ -92,7 +92,7 @@ export default function Welcome({ isLandingPage=false }) {
                 />
                 <h3 className={styles.slogan}>
                   {" "}
-                  Innovation , engagement , Performance
+                  Innovation , Engagement , Performance
                 </h3>
               </div>
               <h2

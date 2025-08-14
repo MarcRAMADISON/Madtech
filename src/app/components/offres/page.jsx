@@ -5,8 +5,8 @@ import Animation from '../animation/page';
 
 function Offres() {
     return ( <div className={styles.container} id="offres">
-        <h1 className={styles.title}>Nos offres</h1>
-        <h3 className={styles.subTitle}>Nous lançons des packs sur-mesure pour les entrepreneurs, thérapeutes, restaurateurs, coachs, et tout professionnel souhaitant gagner en visibilité, en crédibilité et en clients.
+        <h1 className={styles.title}>Mes offres</h1>
+        <h3 className={styles.subTitle}>Je lance des packs sur-mesure pour les entrepreneurs, thérapeutes, restaurateurs, coachs, et tout professionnel souhaitant gagner en visibilité, en crédibilité et en clients.
         Profitez de cette offre limitée pour poser les bases d’une communication puissante… sans exploser votre budget.</h3>
         <div className={styles.cardContainer}>
         {
@@ -39,7 +39,7 @@ function Offres() {
                         }
                         <h3 className={styles.info}>💡 Idéal pour professionnaliser votre image, attirer vos clients cibles et automatiser les premières prises de contact.</h3>
                         <div className={styles.button}>
-                        Réserver votre formule
+                        Réserver votre offre
                         </div>
                     </div>
                     <div className={styles.onglet1}></div>

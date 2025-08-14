@@ -59,19 +59,15 @@ function Presentation({ isLandingPage = false }) {
         </Animation>
       )}
       <Animation className={styles.textContainer} animation="fadeInLeft">
-        <h1 className={styles.title}> Qui sommes nous?</h1>
+        <h1 className={styles.title}> A propos de <span style={{color:"#ff914d"}}>Marc RAMADISON</span></h1>
         <h2 className={styles.subTitle}>
-          Webillien est une agence de communication et de marketing digital
-          dédiée à la croissance de votre présence en ligne. Nous créons des
-          sites web sur mesure, gérons vos réseaux sociaux, lançons vos
-          campagnes Google Ads et intégrons l’intelligence artificielle à votre
-          stratégie.
+        Expert en développement web depuis plus de quatre (4) ans d'expérience professionnelle.
           <span style={{ fontWeight: "bold" }}>
-            👉 Nous transformons votre présence digitale en véritable machine à
+            👉 Je transforme votre présence digitale en véritable machine à
             vendre
           </span>
-          , grâce à des sites performants, une communication stratégique et des
-          actions marketing ciblées. Notre mission : bâtir une image forte,
+          , grâce à des sites web performants et optimisés SEO, une communication stratégique et des
+          actions marketing ciblées. Ma mission : bâtir une image forte,
           authentique et rentable pour votre marque. De la conception à la
           conversion, nous vous accompagnons de A à Z. Objectif : visibilité,
           impact et résultats concrets.

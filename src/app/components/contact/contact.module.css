@@ -25,7 +25,7 @@
     color:#38b6ff;
     font-size:2rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .subtitle{
     font-size: 1rem;
@@ -71,7 +71,7 @@
 }
 .inputAreaField{
     background-color: #fff;
-    height:100px;
+    height:180px;
     width:100%;
     border:none;
     border-radius:5px;
@@ -85,7 +85,7 @@
 }
 .bouton{
     color:#fff;
-    background-color: #8278c4;
+    background-color: #ff914d;
     padding: 5px 20px;
     width:fit-content;
     height: fit-content;
@@ -100,7 +100,7 @@
 .block1Message{
     width:100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 100%;
     gap:17px
 }
 

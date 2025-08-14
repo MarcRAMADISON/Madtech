@@ -118,8 +118,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     bottom: 50px;
-    left: 48%;
-    transform: translateX(calc(960px - 100%));
+    right: 13%;
+    transform: translateX(50%);
     z-index: 999;
     border-radius: 20px;
     padding: 15px 30px;
@@ -148,6 +148,12 @@
     opacity: 1; 
   }
 
+@media (max-width:1500px){
+  .newsletterContainer{
+    right: 15%;
+  }
+}
+
  @media (max-width:920px){
     .menuContainer{
         display: none;
@@ -165,7 +171,7 @@
     }
     .newsletterContainer{
       bottom: 0px;
-      left:0px;
+      right:0px;
       transform: none;
       border-radius: 20px 20px 0px 0px;
     }

@@ -62,7 +62,7 @@ function MenuBar({redirect}) {
     <>
       <div className={styles.newsletterContainer} style={{opacity: isScrolled ? 1 : 0, bottom:isScrolled ? '' : '-80px'}}>
         <h3 className={styles.newsletterTitle}>
-          Inscrivez vous à notre newsletter et on vas construire votre{" "}
+          Inscrivez vous à ma newsletter et je vais construire votre{" "}
           <span style={{ color: "#00214d" }}>
             identité visuelle gratuitement
           </span>
@@ -121,7 +121,7 @@ function MenuBar({redirect}) {
               setOpen(false);
             }}
           >
-            Qui nous sommes?
+            A propos
           </h2>
           <h2
             className={styles.mobileItem}
@@ -133,7 +133,7 @@ function MenuBar({redirect}) {
               setOpen(false);
             }}
           >
-            Nos services
+            Mes services
           </h2>
           <h2
             className={styles.mobileItem}
@@ -145,7 +145,7 @@ function MenuBar({redirect}) {
               setOpen(false);
             }}
           >
-            Offres
+            Mes offres
           </h2>
           <div
             style={{
@@ -206,7 +206,7 @@ function MenuBar({redirect}) {
             }
             handleRedirect("about")
           } }>
-            Qui nous sommes?
+            A propos
           </h2>
           <h2
             className={styles.item}
@@ -217,7 +217,7 @@ function MenuBar({redirect}) {
               handleRedirect("services")
             } }
           >
-            Nos services
+            Mes services
           </h2>
           <h2 className={styles.item} onClick={() =>{
              if(redirect){
@@ -225,7 +225,7 @@ function MenuBar({redirect}) {
             }
             handleRedirect("offres")
           } }>
-            Offres
+            Mes offres
           </h2>
           <div
             style={{ display: "flex" }}
