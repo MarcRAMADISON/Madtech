@@ -24,7 +24,7 @@
 }
 .cardContainer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     width:100%;
     background-color: #f8f5f1;
     margin-top: 100px;
@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     width:90%;
-    max-width: 450px;
+    max-width: 400px;
     margin: 100px auto auto auto;
     padding: 20px;
     place-self:center;
@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: column;
     width:90%;
-    max-width: 450px;
+    max-width: 400px;
     height:calc(100% - 290px);
     min-height: 560px;
     background-color: #fff;
@@ -79,7 +79,7 @@
 .offre{
     color:#fff;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     margin-top: 2px;
 }
@@ -94,7 +94,8 @@
     color:#00214d;
     font-size: 2rem;
     place-self: center;
-    margin:auto
+    margin:auto;
+    font-weight: 500;
 }
 .info{
     color:#00214d;
@@ -110,6 +111,46 @@
     font-weight: 600;
     background-color: #38b6ff;
     border-radius: 5px;
+    cursor: pointer;
+}
+.titleModal{
+    color:#38b6ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.inputField{
+    border: solid 1px #38b6ff;
+    height:30px;
+    width:100%;
+    border-radius:5px;
+    color:#000;
+    padding-left: 5px;
+}
+.block1{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:17px;
+    margin: 30px 0px;
+}
+.label{
+    color:#000;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.bouton{
+    color:#fff;
+    background-color: #38b6ff;
+    padding: 5px 20px;
+    width:fit-content;
+    height: fit-content;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all 0.8s ease-in;
 }
 
 @media (max-width:920px){

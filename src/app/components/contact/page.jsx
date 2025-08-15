@@ -11,9 +11,10 @@ function Contact() {
   const [values, setValues] = useState({
     fullName: "",
     email: "",
-    telephone: "",
     message: "",
   });
+
+  const [isLoading,setIsLoading]=useState(false)
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -22,8 +23,9 @@ function Contact() {
   };
 
   const handleSend = () => {
+    setIsLoading(true)
     emailjs
-      .send("service_5z97bw4", "template_5i1z7ln", values, "8fg6gI1O_wlTsVC1i")
+      .send("service_4alwvji", "template_tzdxihv", values, "PPZf-H8bAQdM8vymv")
       .then(
         (result) => {
           Swal.fire({
@@ -32,17 +34,11 @@ function Contact() {
             icon: "success",
           });
           setValues({
-            name: "",
-            prenom: "",
-            typeEntreprise: "",
-            nomEntreprise: "",
+            fullName: "",
             email: "",
-            telephone: "",
-            pays: "",
-            ville: "",
-            codePostal: "",
             message: "",
           });
+          setIsLoading(false)
         },
         (error) => {
           Swal.fire({
@@ -50,13 +46,13 @@ function Contact() {
             text: "Une erreur est survenu lors de l'envoie de votre devis",
             icon: "error",
           });
+          setIsLoading(false)
         }
       );
   };
 
   const checkValidation =
     values.fullName &&
-    values.telephone &&
     values.email &&
     values.message
 
@@ -72,17 +68,6 @@ function Contact() {
                 className={styles.inputField}
                 name="fullName"
                 value={values.fullName}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className={styles.inputLine}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <h3 className={styles.label}>Téléphone :</h3>
-              <input
-                className={styles.inputField}
-                name="telephone"
-                value={values.telephone}
                 onChange={handleChange}
               />
             </div>
@@ -115,7 +100,7 @@ function Contact() {
               />
             </div>
           </div>
-          {checkValidation ? (
+          {checkValidation && !isLoading ? (
             <div className={styles.bouton} onClick={handleSend}>
               Envoyer
             </div>

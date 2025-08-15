@@ -21,42 +21,31 @@ export const services = [
 
 export const offres = [
   {
-    offre: "Lancement",
+    offre: "PARTICULIER",
     price: 299,
     descriptions: [
-      "✅ Un site vitrine (une page de 5 sections maximum ), Newsletter, Formulaire de contact, Lien vers vos réseaux sociaux",
-      "✅ Création d'identitée visuelle (logo, PDP, PDC,... ), publications planifiées",
-      "✅ La gestion de 2 réseaux sociaux au choix (Facebook, Instagram, Tiktok...)",
-      "✅ Gérer vos campagne ADS : Google ADS - Meta ADS",
-      "✅ 2 publications et 5 stories par semaine avec interactions régulières sur les réseaux sociaux.",
-      "✅ Suivi des performances tous les mois",
+      "✅ Site vitrine complet, performant et optimisé SEO ",
+      "✅ Gestion de 2 réseaux sociaux",
+      "✅ Création d’identité visuelle: Logo, PDP, PDC",
+      "✅ Stratégie de contenu, 3 publications par semaine sur chaque réseau social",
+      "✅ Community engagement : Interactions avec les abonnés, réponses aux commentaires, messages privés, et gestion des avis.",
+      "✅ Veille concurrentielle ",
     ],
+    info:'Offre avec engagement les 3 premiers mois et après vous pouvez arrêter à tout moment.'
   },
   {
-    offre: "Startup",
+    offre: "ENTREPRISE",
     price: 598,
     descriptions: [
-      "✅ Intégration WhatsApp / Messenger / Calendly / paiement (si besoin)",
-      "✅ Un Community Manager personnalisé 300 avis positifs de plus sur Google",
-      "✅ La gestion de 3 réseaux sociaux avec une ligne éditoriale stratégique",
-      "✅ Création de 2 visuels vidéo promotionnels",
-      "✅ 3 publications et 6 stories par semaine avec interactions régulières sur les réseaux sociaux.",
-      "✅ Rédaction persuasive pour vos publications et votre site",
-      "✅ Feedback sur les résultats obtenus chaque fin du mois",
+      "✅ Site web personnalisé, complet, performant et optimisé SEO (vitrine , e-commerce, site de réservation, ...)",
+      "✅ Gestion de tous vos réseaux sociaux",
+      "✅ Création d’identité visuelle: Logo, PDP, PDC",
+      "✅ Stratégie de contenu, publications par semaine non limitées",
+      "✅ Community engagement : Interactions avec les abonnés, réponses aux commentaires, messages privés, et gestion des avis.",
+      "✅ Veille concurrentielle ",
+      "✅ Gérer vos campagne ADS (GOOGLE ADS, META ADS)",
     ],
-  },
-  {
-    offre: "Entreprise",
-    price: 899,
-    descriptions: [
-      "✅ Création ou refonte de votre identité visuelle complète (logo, charte graphique, couleurs, typographies)",
-      "✅ Community management de 4 réseaux sociaux + stratégie de contenu premium",
-      "✅ 1 mois de publicité Ads ultra-ciblée + landing page optimisée pour la conversion",
-      "✅ Site web professionnel complet (jusqu’à 4 pages + SEO de base + page de réservation)",
-      "✅ Audit + stratégie digitale personnalisée sur 3 mois",
-      "✅ Pack storytelling de marque + scripts de vidéo pour reels ou TikTok",
-      "✅ Aide à la création d'évènements et conseil sur les produits générateurs de buzz",
-    ],
+    info:"Offre avec engagement les 3 premiers mois et après vous pouvez arrêter à tout moment. Budget ADS non inclus"
   },
 ];
 

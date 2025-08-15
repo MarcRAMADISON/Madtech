@@ -36,7 +36,7 @@ function MenuBar({redirect}) {
 
     if(email){
       emailjs
-      .send("service_5z97bw4", "template_gmgrr4k",{email:email}, "8fg6gI1O_wlTsVC1i")
+      .send("service_4alwvji", "template_c34tjzs",{email:email}, "PPZf-H8bAQdM8vymv")
       .then(
         (result) => {
           Swal.fire({

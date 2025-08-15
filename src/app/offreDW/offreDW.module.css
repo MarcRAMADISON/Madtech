@@ -27,7 +27,7 @@
     margin-bottom: 50px;
 }
 .subTitle{
-    color:#5e17eb;
+    color:#38b6ff;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
 .dote{
     width:5px;
     height:5px;
-    background-color: #5e17eb;
+    background-color: #38b6ff;
     border-radius: 50%;
     margin-right: 20px;
 }
